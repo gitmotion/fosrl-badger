@@ -1,5 +1,8 @@
 # Badger Plugin for Traefik with Pangolin Integration
 
+This is based on gitmotion/fosrl-badger, which is a fork of the original [Badger](https://github.com/fosrl/badger) plugin.
+- This version is specifically designed to work with Pangolin to return the `CF-Connecting-IP`, `X-Real-IP`, and/or `X-Forwarded-For` headers to the pangolin.
+
 Badger is a middleware plugin designed to work with the Traefik reverse proxy in conjunction with [Pangolin](https://github.com/fosrl/pangolin), a multi-tenant tunneled reverse proxy server and management interface with identity and access management. Badger acts as an authentication bouncer, ensuring only authenticated and authorized requests are allowed through the proxy.
 
 This plugin is **required** to be configured alongside [Pangolin](https://github.com/fosrl/pangolin) to enforce secure authentication and session management.

@@ -1,15 +1,16 @@
-displayName: gitmotion - Fossorial Badger
+displayName: gitmotion - Fossorial Badger with real ip support
+
 type: middleware
 
 import: github.com/gitmotion/fosrl-badger
 
-summary: Middleware auth bouncer for Pangolin
+summary: Middleware auth bouncer for Pangolin with CF-Connecting-IP / X-Real-IP / X-Forwarded-For support.
 
 testData:
     apiBaseUrl: "http://localhost:3001/api/v1"
     userSessionCookieName: "p_session_token"
     resourceSessionRequestParam: "p_session_request"
-    TrustedIPs:
+    trustedIPs:
         - "173.245.48.0/20" # Cloudflare IP ranges start
         - "103.21.244.0/22"
         - "103.22.200.0/22"
